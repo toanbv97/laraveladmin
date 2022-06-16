@@ -1,0 +1,53 @@
+.rating-selection .rating-input {
+    float: right;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    margin: 0 0 0 -16px;
+    opacity: 0
+}
+
+.rating-selection .rating-star:hover {
+    background-position: 0 0
+}
+
+.rating-selection .rating-star {
+    position: relative;
+    float: right;
+    display: block;
+    width: 26px;
+    height: 26px;
+    background: url(../upload/images/common_img/star_sprite_pc-min.png) 0 0;
+    margin: 0 1px
+}
+
+.rating-selection .rating-star:hover, .rating-star:hover ~ .rating-star {
+    background-position: 0 0
+}
+
+.rating-selection .rating-star:hover, .rating-star:hover ~ .rating-star, .rating-input:checked ~ .rating-star {
+    background-position: 0 0
+}
+
+.rating-selection .rating:hover .rating-star:hover, .rating:hover .rating-star:hover ~ .rating-star, .rating-input:checked ~ .rating-star {
+    background-position: 0 0
+}
+
+.rating-selection .rating-star, .rating:hover .rating-star {
+    position: relative;
+    float: right;
+    display: block;
+    width: 26px;
+    height: 26px;
+    background: url(../upload/images/common_img/star-min.png) 0 -28px
+}
+
+.rating-selection .rating:hover .rating-star:hover, .rating:hover .rating-star:hover ~ .rating-star {
+    background-position: 0 -56px !important
+}
+
+.rating-selection {
+    display: inline;
+    float: left;
+    margin-top: -8px
+}
